@@ -5,5 +5,6 @@ import { Server } from "./presentation/server";
 })();
 
 function main() {
-    Server.start();
+    console.log("Beggining service");
+    Server.start();    
 } 
