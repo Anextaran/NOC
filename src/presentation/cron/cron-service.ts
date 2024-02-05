@@ -1,5 +1,7 @@
 import { CronJob } from "cron";
 
+// like a plugin
+
 type CronTime = string | Date;
 type OnTick = ()=>void;
 
