@@ -8,6 +8,6 @@ import 'dotenv/config'
 
 function main() {
     // console.log("Beggining service");
-    //Server.start();    
-    console.log(envs.PORT);
+    // console.log(envs.PORT);
+    Server.start();    
 } 

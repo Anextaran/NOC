@@ -9,11 +9,11 @@ const fileSystemLogRepository = new LogRepositoryImpl(
     // whether is postgreSQL, mongoDB or the system...
 );
 
-
 export class Server {
 
     static start() {
         console.log("Server started...");
+
         CronService.createJob(
 
             '* * * * * *',
