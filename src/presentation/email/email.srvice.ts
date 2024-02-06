@@ -1,15 +1,17 @@
-import nodemailer from 'nodemailer'
 import { envs } from '../../config/plugins/envs.plugin'
+import nodemailer from 'nodemailer';
 
 interface SendMailOptions {
-    from: string;
-    to: string;
+    to: string | string[];
     subject: string;
     htmlBody: string;
-    //todo: attachements:
+    attachments?: MailAttachment[];
 }
 
-// todo: attachements
+interface MailAttachment {
+    filename: string;
+    path: string;
+}
 
 export class EmailService {
 
@@ -23,25 +25,45 @@ export class EmailService {
 
     async sendMail(options: SendMailOptions): Promise<boolean> {
 
-        const {from, to, subject, htmlBody } = options;
+        const { to , subject, htmlBody, attachments = [] } = options;
 
         try {
 
             const sentInformation = await this.transporter.sendMail({
-                from,
                 to,
                 subject,
                 html: htmlBody,
+                attachments
             });
 
-            console.log(sentInformation);
+            console.log("Email sent succefully");
             return true;
 
         } catch (error) {
-
+            console.log(error);
             return false;
         }
 
+    }
+
+    sendEmailWithFileSystemLogs(to: string | string[]) {
+
+        const subject = 'Logs del servidor';
+        const htmlBody = `
+        <h1> System Logs </h1>
+        <p> I attach the logs of this week... </p>`
+        const attchmnts :MailAttachment[] = [
+            {filename: 'logs-high.log', path: './logs/logs-high.log'},
+            {filename: 'logs-medium.log', path: './logs/logs-medium.log'},
+            {filename: 'logs-all.log', path: './logs/logs-all.log'},
+        ];
+
+       return this.sendMail({
+            to,
+            subject,
+            attachments:attchmnts,
+            htmlBody,
+        });
     }
 
 }

@@ -18,8 +18,7 @@ export class Server {
         console.log("Server started...");
 
         const emailService = new EmailService();
-        emailService.sendMail({
-            from: 'AnexitoDev',
+        /* emailService.sendMail({
             to: 'diegorodriguez999x@gmail.com',
             subject: 'System logs',
             htmlBody: `
@@ -30,20 +29,24 @@ export class Server {
             sky, tacos, don’t even ask why. BARBACOA!! Make it a double there pal. Can you put some peppers and onions on that? Tacos al pastor made with 
             adobada meat. Can you put some peppers and onions on that? BARBACOA!!
             `
-        });
+        }); */
 
-        /*  CronService.createJob(
- 
-             '* * * * * *',
-             () => {
-                 // const url = 'http://google.com';
-                 const url = 'http://localhost:3000/posts'                
-                 new CheckService(
-                     fileSystemLogRepository,
-                     () => console.log(`${url} is ok`),
-                     (error) => console.log(error),
-                 ).execute(url);
-             }
-         ); */
+        emailService.sendEmailWithFileSystemLogs([
+            'diegorodriguez999x@gmail.com',
+        ]);
+
+        /*          CronService.createJob(
+         
+                     '* * * * * *',
+                     () => {
+                         // const url = 'http://google.com';
+                         const url = 'http://localhost:3000/posts'                
+                         new CheckService(
+                             fileSystemLogRepository,
+                             () => console.log(`${url} is ok`),
+                             (error) => console.log(error),
+                         ).execute(url);
+                     }
+                 ); */
     }
 }
