@@ -9,7 +9,6 @@ export class LogRepositoryImpl implements LogRepository{
         // Protip: Al ponerlo aqui lo recibe como argumento
         // y lo establece como propiedad en una sola linea
         private readonly logDataSource: LogDataSource,
-
     ){}
 
     async saveLogs(log: LogEntity): Promise<void> {

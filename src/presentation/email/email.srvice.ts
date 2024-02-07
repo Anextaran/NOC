@@ -5,7 +5,7 @@ interface SendMailOptions {
     to: string | string[];
     subject: string;
     htmlBody: string;
-    attachments?: MailAttachment[];
+    attachments?: MailAttachment[]; // files
 }
 
 interface MailAttachment {
@@ -13,9 +13,10 @@ interface MailAttachment {
     path: string;
 }
 
+// Sends emails
 export class EmailService {
 
-    private transporter = nodemailer.createTransport({
+    private transporter = nodemailer.createTransport({        
         service: envs.MAILER_SERVICE,
         auth: {
             user: envs.MAILER_EMAIL,
@@ -35,15 +36,14 @@ export class EmailService {
                 html: htmlBody,
                 attachments
             });
-
-            console.log("Email sent succefully");
+            // console.log(sentInformation);
+            console.log("EMAIL SENT SUCCEFULLY");
             return true;
 
         } catch (error) {
             console.log(error);
             return false;
         }
-
     }
 
     sendEmailWithFileSystemLogs(to: string | string[]) {
@@ -51,6 +51,8 @@ export class EmailService {
         const subject = 'Logs del servidor';
         const htmlBody = `
         <h1> System Logs </h1>
+        <img src= "https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1"
+        alt="cat" width="400px" height:"320px">
         <p> I attach the logs of this week... </p>`
         const attchmnts :MailAttachment[] = [
             {filename: 'logs-high.log', path: './logs/logs-high.log'},
@@ -60,7 +62,7 @@ export class EmailService {
 
        return this.sendMail({
             to,
-            subject,
+            subject, 
             attachments:attchmnts,
             htmlBody,
         });
