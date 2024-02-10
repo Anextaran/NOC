@@ -4,3 +4,6 @@ dist/
 .$NOC.drawio.dtmp
 logs/
 .env
+
+mongo/
+postgres/

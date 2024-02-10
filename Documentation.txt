@@ -1,0 +1,21 @@
+
+
+Como configurar docker 🐋
+
+- Docker crea una base de datos ficticia util para probar nuestro proyecto.
+1. Configuramos el '.env' donde tendremos que poner los datos que tendra nuestra base de datos
+ficticia, por ejemplo:
+
+DATABASENAME_URL              = 
+DATABASENAME_DB_NAME    =  <Nombre de nuestra db>
+DATABASENAME_USER            =  <Nombre de usuario>
+DATABASENAME_PASS            =  <Password>
+
+Estos datos pueden ser los que queramos ya que la base de datos ficticia se creara
+con estas configuraciones. El primer campo se mantendra vacio por el momento.
+
+2. Creamos nuestro archivo 'docker-compose.yml'. Vease la documentacion para ver como se
+deben configurar estos archivos. Es aqui donde usaremos nuestras variables de entorno, es importante recalcar que el puerto puede tener conflictos si ya tenemos la base que usamos instalada en el sistema, si es el caso, entonces use otro puerto.
+
+3. Ejecutar el comando "docker compose up -d" (d = desarrollo), esto deberia crear el contenedor
+de la base de datos en docker.

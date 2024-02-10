@@ -28,9 +28,10 @@ export class LogEntity {
         this.origin = origin;
     }
 
+    // Recibe un json y convierte a  un 'LogEntity'
     static fromJson = (json: string): LogEntity => {
 
-        const { message, level, createdAt } = JSON.parse(json);
+        const { message, level, createdAt, origin } = JSON.parse(json);
         const log = new LogEntity({
             level,
             message,
@@ -38,6 +39,19 @@ export class LogEntity {
             origin,
         })
         log.createdAt = new Date(createdAt);
+        return log;
+    }
+
+    // Recine un objeto (clave-valor), las claves son string
+    // el valor puede ser 'any'. Convierte a un 'LogEntity'
+    static fromObject = (object: { [key: string]: any }): LogEntity => {
+
+        const { message, level, createdAt, origin } = object;
+        if (!message || !level || !createdAt || !origin)
+            throw new Error('couldnt create a LogEntity instance from this object');
+        const log = new LogEntity({
+            message, level, createdAt, origin
+        });
         return log;
     }
 }

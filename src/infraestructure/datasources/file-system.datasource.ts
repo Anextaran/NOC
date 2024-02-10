@@ -30,9 +30,11 @@ export class FileSystemDataSource implements LogDataSource {
 
     private getsLogsFromFile = (path: string): LogEntity[] => {
         const content = fs.readFileSync(path, "utf-8");
+        // if the file is empty
+        if(content === '') return [];
         const logs = content.split('\n').map(LogEntity.fromJson);
         return logs;
-    }
+    } 
 
     async saveLogs(newLog: LogEntity): Promise<void> {
 
