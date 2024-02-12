@@ -1,5 +1,5 @@
 import { envs } from "../config/plugins/envs.plugin";
-import { PostgresLogDataSource } from "../domain/datasources/postgres-log.datasource";
+import { PostgresLogDataSource } from "../infraestructure/datasources/postgres-log.datasource";
 import { LogSeverityLevel } from "../domain/entities/log.entity";
 import { CheckService } from "../domain/use-cases/checks/check-service";
 import { CheckServiceMultiple } from "../domain/use-cases/checks/check-service-multiple";
@@ -9,22 +9,10 @@ import { MongoLogDataSource } from "../infraestructure/datasources/mongo-log.dat
 import { LogRepositoryImpl } from "../infraestructure/repositories/log.repository.impl";
 import { CronService } from "./cron/cron-service";
 import { EmailService } from './email/email.srvice';
-import fs from 'fs';
 
-const postgreRepos = new LogRepositoryImpl(
-    // new FileSystemDataSource()
-    new PostgresLogDataSource()
-);
-
-const fsRepost = new LogRepositoryImpl(
-    new FileSystemDataSource(),
-)
-
-const mongoRepos = new LogRepositoryImpl(
-    new MongoLogDataSource(),
-)
-
-
+const postgreRepos = new LogRepositoryImpl(new PostgresLogDataSource());
+const fsRepost = new LogRepositoryImpl(new FileSystemDataSource());
+const mongoRepos = new LogRepositoryImpl(new MongoLogDataSource());
 
 const emailService = new EmailService();
 
@@ -34,7 +22,7 @@ const Jobs = {
         const url = 'http://google.com';
         // const url = 'http://localhost:3000/posts'
         new CheckService(
-            postgreRepos, // or mongo or fs
+            mongoRepos,
             () => console.log(`${url} is ok`),
             (error) => console.log(error),
         ).execute(url);
@@ -61,10 +49,6 @@ export class Server {
     public static async start() {
 
         console.log("SERVER STARTING...");
-        CronService.createJob('*/3 * * * * *', Jobs.checkStatusMultiple);
-        CronService.createJob('*/3 * * * * *', Jobs.checkStatusMultiple);
-
-        // const logs = await logRepos.getLogs(LogSeverityLevel.medium);
-        // console.log(logs);
+        CronService.createJob('*/3 * * * * *', Jobs.checkStatus);
     }
 }

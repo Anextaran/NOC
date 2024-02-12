@@ -1,11 +1,11 @@
 import { PrismaClient, SeverityLevel } from "@prisma/client";
-import { LogEntity, LogSeverityLevel } from "../entities/log.entity";
-import { LogDataSource } from "./log.datasource";
+import { LogEntity, LogSeverityLevel } from "../../domain/entities/log.entity";
+import { LogDataSource } from "../../domain/datasources/log.datasource";
 
 const prismaClient = new PrismaClient();
 // The levels in the Prisma scheme and in our implementation
 // are different, so we need to use...
-const severityEnum = {
+export const severityEnum = {
     low: SeverityLevel.LOW,
     high: SeverityLevel.HIGH,
     medium: SeverityLevel.MEDIUM,
@@ -22,7 +22,7 @@ export class PostgresLogDataSource implements LogDataSource {
             }
         });
 
-        console.log('Postgress saved');
+        console.log('Postgres log created');
     }
     async getLogs(severityLevel: LogSeverityLevel): Promise<LogEntity[]> {
 

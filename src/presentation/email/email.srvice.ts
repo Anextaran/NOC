@@ -1,14 +1,14 @@
 import { envs } from '../../config/plugins/envs.plugin'
 import nodemailer from 'nodemailer';
 
-interface SendMailOptions {
+export interface SendMailOptions {
     to: string | string[];
     subject: string;
     htmlBody: string;
     attachments?: MailAttachment[]; // files
 }
 
-interface MailAttachment {
+export interface MailAttachment {
     filename: string;
     path: string;
 }
@@ -24,10 +24,14 @@ export class EmailService {
         }
     });
 
+    // Las dependendcias deberian de mandarse como propiedades,
+    // pero por cuestiones educativos se ha puesto como dependencias
+    // ocultas para que el testing sea mas desafiante
+    constructor(){}
+
     async sendMail(options: SendMailOptions): Promise<boolean> {
 
         const { to , subject, htmlBody, attachments = [] } = options;
-
         try {
 
             const sentInformation = await this.transporter.sendMail({
@@ -60,6 +64,7 @@ export class EmailService {
             {filename: 'logs-all.log', path: './logs/logs-all.log'},
         ];
 
+        // Regresando la promesa, quien llame a esta funcion debera manejarla con await y then...
        return this.sendMail({
             to,
             subject, 
@@ -67,7 +72,6 @@ export class EmailService {
             htmlBody,
         });
     }
-
 }
 
 
