@@ -11,3 +11,4 @@ logs/
 /mongo-test/
 /postgres-test/
 .$NOC.drawio.bkp
+/coverage/

@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-02-09T23:50:02.686Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="qFa9avj0sf14G5wMjRXF" version="23.0.2" type="device">
+<mxfile host="Electron" modified="2024-02-12T17:35:43.813Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="NedtGy_q6bqSTQfImSjg" version="23.0.2" type="device">
   <diagram id="Fn2GvNRN-7Ruor7nib-z" name="Page-1">
-    <mxGraphModel dx="789" dy="439" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="5" pageWidth="827" pageHeight="1169" background="#1A1A1A" math="0" shadow="1">
+    <mxGraphModel dx="2338" dy="1322" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="5" pageWidth="827" pageHeight="1169" background="#1A1A1A" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -370,19 +370,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-89" value="#MongoDataBase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#FFFFFF;strokeColor=#2D7600;gradientColor=#1A3300;swimlaneFillColor=none;gradientDirection=west;fontFamily=Poppins;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-89" value="#MongoDataBase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#FFFFFF;strokeColor=#2D7600;gradientColor=#1A3300;swimlaneFillColor=none;gradientDirection=west;fontFamily=Poppins;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="1643" y="206" width="289" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-90" value="Connects to mongoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-89">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-90" value="Connects to mongoDB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-89" vertex="1">
           <mxGeometry y="26" width="289" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-91" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-89">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-91" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-89" vertex="1">
           <mxGeometry y="52" width="289" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-92" value="&lt;u&gt;&lt;font&gt;+ connect(mongoUrl:string,dbName:string)&lt;/font&gt;&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-89">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-92" value="&lt;u&gt;&lt;font&gt;+ connect(mongoUrl:string,dbName:string)&lt;/font&gt;&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-89" vertex="1">
           <mxGeometry y="60" width="289" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-99" value="&lt;font&gt;Use&lt;/font&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.469;entryY=-0.004;entryDx=0;entryDy=0;exitX=0.591;exitY=1.13;exitDx=0;exitDy=0;fontFamily=Poppins;fontColor=#FFFFFF;fillColor=#60a917;strokeColor=#2D7600;labelBackgroundColor=none;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="13" target="JSgjXSQDGbaPq8ydQVe2-89">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-99" value="&lt;font&gt;Use&lt;/font&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.469;entryY=-0.004;entryDx=0;entryDy=0;exitX=0.591;exitY=1.13;exitDx=0;exitDy=0;fontFamily=Poppins;fontColor=#FFFFFF;fillColor=#60a917;strokeColor=#2D7600;labelBackgroundColor=none;exitPerimeter=0;entryPerimeter=0;" parent="1" source="13" target="JSgjXSQDGbaPq8ydQVe2-89" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1597" y="143" as="sourcePoint" />
             <mxPoint x="2154" y="303" as="targetPoint" />
@@ -392,19 +392,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-100" value="&lt;font color=&quot;#000000&quot;&gt;#MongoDataSource&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-100" value="&lt;font color=&quot;#000000&quot;&gt;#MongoDataSource&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="2061" y="1446" width="405" height="117" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-101" value="Logs/Obtains the service status in/from the mongo system" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-100">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-101" value="Logs/Obtains the service status in/from the mongo system" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-100" vertex="1">
           <mxGeometry y="26" width="405" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-102" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-100">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-102" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-100" vertex="1">
           <mxGeometry y="52" width="405" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-103" value="+ saveLogs(newLog:LogEntity): Promise: void&lt;br&gt;+ getLogs(severityLevel:LogSeverityLevel) : Promise: LogEntity[ ]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" vertex="1" parent="JSgjXSQDGbaPq8ydQVe2-100">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-103" value="+ saveLogs(newLog:LogEntity): Promise: void&lt;br&gt;+ getLogs(severityLevel:LogSeverityLevel) : Promise: LogEntity[ ]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Poppins;labelBackgroundColor=none;fontColor=#FFFFFF;" parent="JSgjXSQDGbaPq8ydQVe2-100" vertex="1">
           <mxGeometry y="60" width="405" height="57" as="geometry" />
         </mxCell>
-        <mxCell id="JSgjXSQDGbaPq8ydQVe2-105" value="&lt;font&gt;Extends&lt;/font&gt;" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Poppins;fontColor=#FFFFFF;fillColor=#0050ef;strokeColor=#E1D5E7;labelBackgroundColor=none;entryX=0.576;entryY=1.052;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JSgjXSQDGbaPq8ydQVe2-100" target="76">
+        <mxCell id="JSgjXSQDGbaPq8ydQVe2-105" value="&lt;font&gt;Extends&lt;/font&gt;" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Poppins;fontColor=#FFFFFF;fillColor=#0050ef;strokeColor=#E1D5E7;labelBackgroundColor=none;entryX=0.576;entryY=1.052;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="JSgjXSQDGbaPq8ydQVe2-100" target="76" edge="1">
           <mxGeometry x="0.0093" y="-7" width="160" relative="1" as="geometry">
             <mxPoint x="2219" y="1364" as="sourcePoint" />
             <mxPoint x="2217" y="1294" as="targetPoint" />
@@ -412,6 +412,31 @@
             <Array as="points">
               <mxPoint x="2260" y="1277" />
               <mxPoint x="1762" y="1273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVmCWRTITMn1KB3gbLCV-89" value="&lt;font color=&quot;#000000&quot;&gt;#PostgreLogDataSource&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="897" y="1462" width="459" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="KVmCWRTITMn1KB3gbLCV-90" value="+ saveLogs(newLog:LogEntity): Promise: void&lt;br style=&quot;color: rgb(255, 255, 255); font-family: Poppins;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Poppins;&quot;&gt;+ getLogs(severityLevel:LogSeverityLevel) : Promise: LogEntity[ ]&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="KVmCWRTITMn1KB3gbLCV-89">
+          <mxGeometry y="26" width="459" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="KVmCWRTITMn1KB3gbLCV-93" value="&lt;font color=&quot;#000000&quot;&gt;Prisma&lt;/font&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="902" y="1357" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KVmCWRTITMn1KB3gbLCV-96" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.479;exitY=0.016;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=70;entryDy=32;entryPerimeter=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="KVmCWRTITMn1KB3gbLCV-89" target="KVmCWRTITMn1KB3gbLCV-93">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1113" y="1429" as="sourcePoint" />
+            <mxPoint x="1273" y="1429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVmCWRTITMn1KB3gbLCV-97" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.372;entryY=1.065;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="KVmCWRTITMn1KB3gbLCV-89" target="76">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1131" y="1305" as="sourcePoint" />
+            <mxPoint x="1665" y="1280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1125" y="1279" />
+              <mxPoint x="1662" y="1279" />
             </Array>
           </mxGeometry>
         </mxCell>
